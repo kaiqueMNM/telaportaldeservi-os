@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Adicione os links para as bibliotecas do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="d-flex align-items-center vh-100">
+
+
+    <div class="container mt-5">
+        <div class="img"><img src="https://portaldeservicos.economia.gov.br/static/media/attendance.1c3ab3a8.jpg" alt="imagem"></div>
+            <div class="col-md-6">
+                <div class="container-primary">
+                <h2 class="mb-4"><b>Central de Atendimento aos <br> Sistemas Estruturantes</b></h2>
+                <p class="texto">Bem-vindo(a) ao Portal da Central de Atendimento aos sistemas estruturantes do Ministerio da Gestão e da inovação em Serviços Públicos.</p>
+                <p class="texto">Acesse com o seu e-mail e senha ou cadastre-se para abrir um chamado.
+
+                    Você receberá notificações por e-mail para acompanhar o atendimento.
+                    
+                    Caso você não encontre, verifique o lixo eletrônico ou a notificação de quarentena "AntiSpam".</p>
+                    <p class="texto">Evite abrir um novo chamado sobre o mesmo assunto.</p>
+                <form id="loginForm">
+                    <div class="user-container">
+                        <label for="username" class="label-text">E-mail:</label>
+                        <input type="text" class="form-control" id="username" name="username"
+                            placeholder="Digite o email">
+                        <div class="">
+                            <label for="password" class="label-text">Senha:</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Digite a senha" required>
+                            <div class="flex">
+                                <input type="checkbox" id="chk" />
+                                <label for="chk" class="switch">
+                                    <span class="slider"></span>
+                                </label>
+                                <label for="lembrar">Lembre-se de mim
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+
+                        <div class="link-container">
+                            <span> <a href="#">Esqueceu a Senha?</a> </span>
+
+                            <span> <a href="#">Não tem acesso ao <br> sistema?</a> </span>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="login.js"></script>
+</body>
+
+</html>
